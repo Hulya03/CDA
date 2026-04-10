@@ -1,0 +1,35 @@
+body {
+    background-image: url(/11.exSpace/assets/img/snow-black.gif);
+}
+
+#planete1 {
+    width: 65px;
+    height: 65px; 
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    top: 550px;
+    right : 900px
+}
+#planete2 {
+    width: 110px;
+    height: 110px; 
+    background-color: white;
+    border-radius: 50%;
+}
+#planete3 {
+    width: 40px;
+    height: 40px; 
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 385px;
+    right : 450px
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

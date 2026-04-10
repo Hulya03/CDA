@@ -1,0 +1,84 @@
+/* Couleurs définies */
+/* Bleu cobalt pour le texte : #051D7A */
+/* Bleu outremer pour les filets (bordures) et le bouton : #2B7BAA */
+/* Fond de page : blanc */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* Fond de page en blanc */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.wrapper {
+    width: 50% !important;
+    max-width: 600px; /* Limite la largeur du formulaire */
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Légère ombre pour l'effet de profondeur */
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+fieldset { margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #2B7BAA; /* Bordure du fieldset en Bleu outremer */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+legend {
+    color: #051D7A; /* Texte du titre fieldset en Bleu cobalt */
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #051D7A; /* Texte des labels en Bleu cobalt */
+    font-weight: bold;
+}
+
+input[type="number"],
+input[type="text"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Assure que padding et bordure sont inclus dans la largeur */
+    border: 1px solid #2B7BAA; /* Filet (bordure) en Bleu outremer */
+    border-radius: 4px;
+}
+
+input:focus,
+button:focus {
+    border-color: #051D7A; /* Bordure plus foncée au focus */
+    outline: none;
+}
+
+button {
+    background-color: #2B7BAA; /* Fond du bouton en Bleu outremer */
+    color: white; /* Texte du bouton en blanc pour un bon contraste */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    border: none; /* Enlève la double bordure si le style est appliqué */
+}
+
+button:hover {
+    background-color: #051D7A; /* Changement de couleur au survol */
+}
+
+input[readonly] {
+    background-color: #f0f0f0; /* Couleur de fond légèrement différente pour l'input en lecture seule */
+    color: #051D7A; /* Texte en Bleu cobalt */
+    font-weight: bold;
+}

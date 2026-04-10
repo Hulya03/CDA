@@ -1,0 +1,19 @@
+body {
+    background-image : url("/7.exPlanetes/assets/img/css-16-bg.webp");
+    display : flex; 
+    justify-content: center; 
+    align-items: center;
+    height : 100vh;
+
+}
+
+img[alt="planete 1"] {
+    height : 150px;
+}
+img[alt="planete 2"] {
+    height : 250px;
+}
+img[alt="planete 3"] {
+    height : 350px;
+}
+

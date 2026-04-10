@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CL_Achat\CL_Achat.csproj" />
+    <ProjectReference Include="..\CL_RegleDeControle\CL_RegleDeControle.csproj" />
+    <ProjectReference Include="..\WFNouvelleFenetre\WFNouvelleFenetre.csproj" />
+  </ItemGroup>
+
+</Project>

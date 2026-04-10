@@ -1,0 +1,55 @@
+:root {
+    --color1: blue;
+    --color2: grey;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    color: var(--color1);
+}
+
+p, ul, th {
+    border: solid 2px var(--color1);
+    background-color: var(--color2);
+
+}
+
+p {
+   padding: 15px;
+}
+
+ul {
+    padding-bottom: 15px ;
+    padding-top: 15px ;
+}
+
+img {
+    height: 50px;
+    
+}
+
+.image {
+    background-color: var(--color2);
+    border: solid 2px var(--color1);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+th {
+    text-transform: uppercase;
+}
+
+table, td {
+    border: solid 2px var(--color1);
+
+}
+
+span {
+    color: var(--color1);
+    text-decoration: underline;
+}

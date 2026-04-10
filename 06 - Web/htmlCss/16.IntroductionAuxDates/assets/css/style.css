@@ -1,0 +1,13 @@
+fieldset, input, button {
+    border : 1px blue solid;
+}
+
+button {
+    color : blue; 
+    background-color: beige;
+}
+
+span {
+    color : blue;
+    font-weight: 900;
+}

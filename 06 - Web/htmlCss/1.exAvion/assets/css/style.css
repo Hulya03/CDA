@@ -1,0 +1,126 @@
+/* :root : déclarer les varibles CCS*/
+:root {
+    --color1: #222222;
+    --color2: #ffffff;
+    --color3: #ccffcc;
+    --color4: #ccccff;
+}
+
+/* sélecteur universel (attention quand on le modifie, il repasse tous les sélecteurs) */
+*{
+    box-sizing: border-box;
+    /*permet d'adapter avec les tailles qu'on impose sans le padding, border..*/
+
+    color :#FFF;
+}
+
+html {
+    font-size: 62.5%; /*10px*/
+}
+
+body {
+    font-size: 1.6rem;;
+    background-color: var(--color1);
+    margin: 0;    
+    font-family : verdana;  
+}
+
+a{
+    color : var(--color4);
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: underline;
+}
+
+a:active { /*changement apparait au moment de cliquer, car avant, long temps de téléchargement*/
+    color : var(--color3);   
+}
+
+h1, h2 {
+        color : var(--color3);
+}
+
+.logo{
+    width : 100px;
+    background-color: #242;
+}
+
+h1, nav, ul, li, nav a{
+    background-color: #242;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #242;
+}
+
+footer{
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    margin : 0;
+    padding: 0;
+}
+
+.menu a{
+    display: block;
+    background-color: #ffffff11; 
+    margin : .1rem;
+    padding : .5rem, 1rem;
+}
+
+.menu li:first-child a {
+    margin-top: 0;
+}
+.menu li:last-child a {
+    margin-bottom: 0;
+}
+
+li{
+    margin-bottom: 2px;
+}
+
+li :hover{
+    background-color: rgb(34, 102, 34);
+}
+
+table {
+    margin : 0 auto;
+    border : solid 2px;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 10px 15px;
+    border : solid 1px;   
+}
+
+td {
+    text-align: center;
+    padding: 8px 10px;
+    border-bottom: solid 1px;
+}
+
+.imgAvion img{
+    width : 230px;
+    height : 150px;
+    border: solid 1px;
+    padding : 5px;
+    margin: 15px;
+}
+
+#galerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#galerie p {
+    text-align: center;
+}
+

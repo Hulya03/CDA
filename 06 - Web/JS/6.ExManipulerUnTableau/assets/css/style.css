@@ -1,0 +1,25 @@
+:root {
+    --colorBackground : rgb(135, 173, 180);
+    --colorText : rgb(197, 226, 224);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--colorBackground);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1000px;
+    border : 2px solid var(--colorText);
+    color: var(--colorText);
+}
+
+h1{
+    color: var(--colorText);
+}

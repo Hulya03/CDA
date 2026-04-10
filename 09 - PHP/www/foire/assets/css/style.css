@@ -1,0 +1,188 @@
+/* Variables CSS pour les couleurs */
+:root {
+    --clr-primary-blue: #007bff; /* Bleu vif pour les actions principales */
+    --clr-light-blue: #e9f5ff; /* Le "beau bleu clair" pour les fonds secondaires */
+    --clr-background: #f8f9fa; /* Arrière-plan général très clair */
+    --clr-text-dark: #343a40; /* Texte principal foncé */
+    --clr-text-light: #6c757d; /* Texte secondaire/labels */
+    --clr-border-light: #ced4da; /* Bordures claires */
+}
+
+/* --- Styles Généraux --- */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--clr-background);
+    color: var(--clr-text-dark);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--clr-primary-blue);
+    padding: 0.8rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.main-content {
+    max-width: 900px;
+    width: 90%;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Permet au contenu de prendre l'espace restant */
+}
+
+h1, h2 {
+    color: var(--clr-primary-blue);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* --- Styles des Formulaires (inscription.php, login.php) --- */
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--clr-border-light);
+    border-radius: 8px;
+    background-color: var(--clr-light-blue); /* Le beau bleu clair pour le fond du formulaire */
+}
+
+form label {
+    font-weight: bold;
+    color: var(--clr-text-dark);
+    text-align: right;
+    padding-top: 0.5rem;
+}
+
+input[type="text"], 
+input[type="password"], 
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--clr-border-light);
+    border-radius: 4px;
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: var(--clr-primary-blue);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+button[type="submit"] {
+    grid-column: 1 / -1; 
+    display: block;
+    width: 100%; 
+    padding: 0.75rem;
+    margin-top: 1rem;
+    background-color: var(--clr-primary-blue);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+form div.form-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 0.5rem 0;
+    min-height: 10px; 
+}
+
+#summary {
+    grid-column: 2 / 3;
+    font-size: 0.9em;
+    color: var(--clr-text-light);
+    margin-top: -1rem; 
+}
+
+/* --- Styles de la page Compte Personnel (comptePerso.php) --- */
+
+#comptePerso-message {
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: var(--clr-light-blue);
+    border-left: 5px solid var(--clr-primary-blue);
+    border-radius: 5px;
+}
+
+/* --- Styles du Tableau (home.php) --- */
+
+table {
+    max-width: 850px; /* Limite la largeur du tableau */
+    width: 95%; /* S'assure qu'il est bien visible sur mobile */
+    
+    /* CENTRAGE HORIZONTAL */
+    margin: 1.5rem auto; 
+    
+    border-collapse: collapse; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+thead {
+    background-color: var(--clr-primary-blue);
+    color: white;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--clr-border-light);
+}
+
+/* Le beau bleu clair pour les lignes alternées */
+tbody tr:nth-child(even) {
+    background-color: var(--clr-light-blue); 
+}
+
+tbody tr:hover {
+    background-color: #d1e7ff; 
+}
+
+.home-table-container {
+    overflow-x: auto; 
+}

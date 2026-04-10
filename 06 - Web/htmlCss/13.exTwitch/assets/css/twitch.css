@@ -1,0 +1,78 @@
+:root {
+    --color1 : #008CBA;
+    --color2 : #555555;
+    --color3 : #4CAF50;
+}
+
+*{ 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+}
+
+table
+{
+    border: solid 2px;
+}
+
+th, td {
+    border : solid 1px; 
+}
+
+th{
+    background-color: #e9e8e8;
+}
+
+.vert{
+    background-color: var(--color3);
+    color: white;
+}
+
+.bleu {
+    background-color: var(--color1);
+    color: white;
+}
+
+h1 {
+    display: inline-block;
+    color: var(--color1);
+} 
+
+#gris {
+    background-color: #e9e8e8;    
+    border-radius: 10px;
+    font-weight : bold; 
+    font-style: italic;
+}
+
+#bouton1 {
+    background-color: var(--color1);
+    color: white;
+    border: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+    
+#bouton2 {
+    background-color: var(--color3);
+    color: white;
+    border: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+    
+#bouton3 {
+    background-color: var(--color2);
+    color: white;
+    border: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

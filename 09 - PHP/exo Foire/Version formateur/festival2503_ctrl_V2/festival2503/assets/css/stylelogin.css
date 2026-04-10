@@ -1,0 +1,90 @@
+/* Définition des couleurs */
+:root {
+    --bleu-clair: #07A5E2;      /* Pour le bouton (fond) et bordure de focus */
+    --bleu-outremer: #2B7BAA;   /* Pour le texte principal (titre) */
+    --bleu-cobalt: #051D7A;     /* Pour les labels et le texte du bouton */
+    --blanc: #ffffff;
+}
+
+/* Mise en page de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--blanc); /* Fond blanc */
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centrage horizontal */
+    align-items: center;     /* Centrage vertical */
+    min-height: 100vh;
+}
+
+/* Conteneur du formulaire pour le centrage */
+.login-container {
+    width: 100%;
+    max-width: 400px; /* Limite la largeur du formulaire */
+    padding: 20px;
+}
+
+/* Style du formulaire */
+.login-form {
+    background-color: var(--blanc); 
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Petite ombre pour la mise en valeur */
+    text-align: center;
+}
+
+.login-form h2 {
+    color: var(--bleu-outremer); /* Bleu outremer pour le titre */
+    margin-bottom: 30px;
+}
+
+/* Groupement label + input */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Alignement du texte à gauche à l'intérieur du groupe */
+}
+
+/* Style des labels */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--bleu-cobalt); /* Bleu cobalt pour les labels */
+}
+
+/* Style des champs de saisie */
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Assure que le padding n'augmente pas la largeur totale */
+    transition: border-color 0.3s;
+}
+
+/* Effet de focus */
+.form-group input:focus {
+    border-color: var(--bleu-clair); /* Bordure bleu clair au focus */
+    outline: none;
+}
+
+/* Style du bouton de connexion */
+button[type="submit"] {
+    background-color: var(--bleu-clair); /* Bleu clair pour le fond du bouton */
+    color: var(--bleu-cobalt); /* Bleu cobalt pour le texte du bouton */
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 100%; /* Bouton pleine largeur */
+    margin-top: 10px;
+}
+
+/* Effet au survol du bouton */
+button[type="submit"]:hover {
+    background-color: #0588c2; /* Un peu plus foncé au survol pour un effet visuel */
+}

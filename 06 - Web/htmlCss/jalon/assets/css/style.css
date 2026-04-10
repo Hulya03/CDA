@@ -1,0 +1,78 @@
+:root {
+    --colorFontCarte : rgb(216, 213, 213);
+    --colorFontDescription : rgb(94, 93, 93); 
+    --colorBackCarte : linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    --colorBackground : rgb(233, 228, 228);
+    --colorBackDescription : white;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60rem;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: var(--colorBackground);
+}
+
+h1{
+    margin-bottom: 0;
+    font-size: 4.5rem ;
+}
+
+h2 {
+    margin-top: .5rem;
+}
+
+.carte {
+    display: flex;
+    background: var(--colorBackCarte) ;
+    color: var(--colorFontCarte);
+    border-radius: 6px;
+    padding : 2.2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 5px 5px rgb(168, 168, 168);
+}
+
+img {
+    border-radius: 200px;
+    border: solid 4px;
+    height: 12rem;
+    margin: 75px 20px 75px 130px;
+}
+
+.description {
+    background-color: var(--colorBackDescription);
+    border-radius: 6px;
+    padding : 1.5rem;
+}
+
+.description p {
+    text-align: justify;
+    color : var(--colorFontDescription)
+}
+
+.carte p:first-child{
+    font-style: italic;
+}
+
+#mail {
+    text-decoration: none;
+    color : var(--colorFontCarte);
+    display : block;
+    margin-bottom: 1rem; 
+}
+
+#phone {
+    text-decoration: none;
+    color : var(--colorFontCarte);
+    display : block
+}

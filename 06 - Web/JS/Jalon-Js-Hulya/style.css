@@ -1,0 +1,71 @@
+:root {
+    --color1: darkblue;
+    --color2: yellow;
+    --color3: darkorange;
+    --color4: lightcyan;
+    --color5: darkgrey; 
+    --color6: #FFFFFF33; /* Blanc transparent */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--color1);
+}
+
+h1, #result, footer {
+    text-align: center;
+    color: var(--color2);
+}
+
+form > div {
+    margin: 1rem 0;
+    padding: .5rem;
+}
+
+main {
+    width : 80rem;
+    margin: 0 auto;
+    border: 1px solid var(--color3);
+    border-radius: 4px;
+    background-color: var(--color6);
+}
+
+label {
+    color : var(--color2);
+    display : inline-block;
+    width : 24rem; 
+}
+
+
+input {
+    border : 1px solid var(--color3);
+    background-color: var(--color6);
+    width : 30rem;
+    padding : 0.3rem;
+}
+
+button {
+    border : 1px solid var(--color3);
+    background-color: var(--color6);
+    width : 20rem;
+    margin : 0 auto; 
+    color : var(--color4);
+    display: block;
+    padding : 0.3rem;
+
+}
+
+::placeholder {
+    color : var(--color5)
+}

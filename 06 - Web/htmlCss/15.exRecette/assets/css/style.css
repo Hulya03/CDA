@@ -1,0 +1,50 @@
+:root {
+    --colorBackground: #f9f9f9;
+    --colorRed : #e55442;
+    --colorvar1: #fef3e1;
+    --colorvar2: #fc9d30;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;;
+    background: var(--colorBackground);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.principal {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto; 
+}
+
+h1 {
+    font-weight: bolder;
+    border-bottom: solid 3px var(--colorRed);
+    padding-bottom: 20px;
+}
+
+.blocAvecImage{
+    flex-direction: row;
+}
+
+
+
+.tomate > img {
+    max-height: 200px;
+}
+
+.plat > img {
+    max-height: 450px;
+}
+
+.blocGauche {
+    flex-direction: column;
+}

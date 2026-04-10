@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"name": "htmlCss",
+			"path": "../../../../htmlCss"
+		},
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../../../../Desktop/jalon"
+		},
+		{
+			"path": "../../../../../../../Desktop/desktop-tutorial"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JS"
+	}
+}
