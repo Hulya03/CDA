@@ -416,3 +416,6 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Je veux ignorer tous les dossiers "00 - Cours" où qu'il soit
+**/00 - Cours/
